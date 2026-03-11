@@ -1,0 +1,25 @@
+<h2>Адмін панель</h2>
+
+<input id="name" placeholder="Назва товару">
+<input id="price" placeholder="Ціна">
+
+<button onclick="addProduct()">Додати товар</button>
+
+<script>
+
+let products = JSON.parse(localStorage.getItem("products")) || []
+
+function addProduct(){
+
+let name=document.getElementById("name").value
+let price=document.getElementById("price").value
+
+products.push({name,price})
+
+localStorage.setItem("products",JSON.stringify(products))
+
+alert("Товар додано")
+
+}
+
+</script>

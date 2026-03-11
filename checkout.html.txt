@@ -1,0 +1,17 @@
+<h2>Оформлення замовлення</h2>
+
+<form>
+
+<input placeholder="Ім'я"><br><br>
+<input placeholder="Телефон"><br><br>
+<input placeholder="Адреса"><br><br>
+
+<h3>Оплата карткою</h3>
+
+<input placeholder="Номер картки"><br><br>
+<input placeholder="MM/YY"><br><br>
+<input placeholder="CVV"><br><br>
+
+<button>Оплатити</button>
+
+</form>

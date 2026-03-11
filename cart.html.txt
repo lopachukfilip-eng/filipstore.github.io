@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Кошик</title>
+</head>
+
+<body>
+
+<h1>Ваш кошик</h1>
+
+<div id="cart"></div>
+
+<a href="checkout.html">Оформити замовлення</a>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+document.getElementById("cart").innerText =
+"Товарів у кошику: " + cart.length
+
+</script>
+
+</body>
+</html>
